@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeChange from "../theme/theme";
 
 export default function NavBar() {
   return (
@@ -34,6 +35,9 @@ export default function NavBar() {
             <li>
               <Link href="/">About</Link>
             </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -42,7 +46,9 @@ export default function NavBar() {
           Rileys Portfolio
         </Link>
       </div>
-      <div className="navbar-end"></div>
+      <div className="navbar-end">
+        <ThemeChange />
+      </div>
     </div>
   );
 }
